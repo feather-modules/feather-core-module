@@ -1,0 +1,3 @@
+# Feather Core Module
+
+WIP.
