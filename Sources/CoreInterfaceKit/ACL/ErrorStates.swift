@@ -1,10 +1,9 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Tibor Bodecs on 27/02/2024.
 //
-
 
 // NOTE: we should improve this...
 public struct ForbiddenState {

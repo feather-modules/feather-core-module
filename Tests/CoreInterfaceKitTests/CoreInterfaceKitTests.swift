@@ -6,6 +6,7 @@
 //
 
 import XCTest
+
 @testable import CoreInterfaceKit
 
 final class CoreInterfaceKitTests: XCTestCase {

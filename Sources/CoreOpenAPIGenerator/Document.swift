@@ -1,14 +1,13 @@
+import CoreOpenAPIGeneratorKit
 import FeatherOpenAPIKit
 import Foundation
 import OpenAPIKit
-import CoreOpenAPIGeneratorKit
 
 struct OpenAPIDocument: Document {
 
     let components: [Component.Type] = [
-        Feather.Core.self,
+        Feather.Core.self
     ]
-    
 
     func openAPIDocument() -> OpenAPI.Document {
         let dateString = DateFormatter.localizedString(

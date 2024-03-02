@@ -5,7 +5,6 @@
 //  Created by Tibor Bodecs on 30/01/2024.
 //
 
-
 public protocol CoreInterface: Sendable {
 
     @discardableResult
@@ -25,4 +24,3 @@ extension CoreInterface {
         try await ACL.authenticate(user, block)
     }
 }
-

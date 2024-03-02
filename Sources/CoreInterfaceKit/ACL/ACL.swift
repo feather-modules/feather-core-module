@@ -5,7 +5,6 @@
 //  Created by Tibor Bodecs on 05/02/2024.
 //
 
-
 public protocol ACLInterface {
 
     func hasRole(_ key: String) async throws -> Bool
@@ -57,21 +56,21 @@ extension ACLInterface {
 
 public enum ACL {
 
-//    struct GuestUser: ACLInterface {
-//
-//        public func hasRole(
-//            _ key: String
-//        ) async throws -> Bool { false }
-//
-//        public func hasPermission(
-//            _ key: String
-//        ) async throws -> Bool { false }
-//
-//        public func hasAccess(
-//            _ key: String,
-//            userInfo: [String: Any]
-//        ) async throws -> Bool { false }
-//    }
+    //    struct GuestUser: ACLInterface {
+    //
+    //        public func hasRole(
+    //            _ key: String
+    //        ) async throws -> Bool { false }
+    //
+    //        public func hasPermission(
+    //            _ key: String
+    //        ) async throws -> Bool { false }
+    //
+    //        public func hasAccess(
+    //            _ key: String,
+    //            userInfo: [String: Any]
+    //        ) async throws -> Bool { false }
+    //    }
 
     // MARK: -
 
@@ -120,7 +119,7 @@ public enum ACL {
         _ user: ACLInterface,
         _ block: (() async throws -> R)
     ) async throws -> R {
-        return try await $rawValue.withValue(user) {
+        try await $rawValue.withValue(user) {
             try await block()
         }
     }
