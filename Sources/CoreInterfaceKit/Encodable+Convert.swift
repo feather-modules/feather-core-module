@@ -16,7 +16,7 @@ extension Encodable {
     ) throws -> T {
         try decoder.decode(T.self, from: try encoder.encode(self))
     }
-    
+
     public func convert<T: Decodable>(
         encoder: JSONEncoder = .init(),
         decoder: JSONDecoder = .init()
@@ -24,4 +24,3 @@ extension Encodable {
         try convert(to: T.self, encoder: encoder, decoder: decoder)
     }
 }
-
