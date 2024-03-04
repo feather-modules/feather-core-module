@@ -1,5 +1,5 @@
-import OpenAPIRuntime
 import CoreInterfaceKit
+import OpenAPIRuntime
 
 /// NOTE: this needs to be here, because of the generated `Types.swift` file dependency.
 

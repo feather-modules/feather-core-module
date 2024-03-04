@@ -5,10 +5,10 @@
 //  Created by Tibor Bödecs on 18/11/2023.
 //
 
-/// A generic List namespace for complex list requests and responses
+/// A generic List namespace for complex list requests and responses.
 public enum List {
 
-    /// Order of the list
+    /// Order of the list.
     public enum Order: String, Codable, Sendable {
         /// Ascending order
         case asc
@@ -16,26 +16,26 @@ public enum List {
         case desc
     }
 
-    /// Pagination information about the List
+    /// Pagination information about the List.
     public struct Page: Codable, Sendable {
 
-        /// Default pagination values
+        /// Default pagination values.
         public enum Default {
-            /// Default page limit value
+            /// Default page limit value.
             ///
             /// Default value: 50
             public static var size: Int = 50
-            /// Default page offset value
+            /// Default page offset value.
             ///
             /// Default value: 0
             public static var index: Int = 0
         }
 
-        /// Limit query value
+        /// Limit query value.
         ///
         /// Defaults ot the `Page.Default.size` value if not present
         public let size: Int
-        /// Offset query value
+        /// Offset query value.
         ///
         /// Defaults ot the `Page.Default.index` value if not present
         public let index: Int

@@ -5,8 +5,8 @@
 //  Created by Tibor Bodecs on 01/03/2024.
 //
 
-import OpenAPIKit
 import FeatherOpenAPIKit
+import OpenAPIKit
 
 extension [SecurityScheme.Type] {
 
