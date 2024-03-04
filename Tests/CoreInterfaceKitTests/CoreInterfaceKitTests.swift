@@ -57,7 +57,7 @@ final class CoreInterfaceKitTests: XCTestCase {
         let key = "key"
         let foo = Foo(key: key)
         do {
-            let bar: Bar = try foo.convert()
+            _ = try foo.convert(to: Bar.self)
             XCTFail("Conversion should fail.")
         }
         catch let error as ConversionError {
