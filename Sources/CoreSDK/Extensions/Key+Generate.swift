@@ -10,7 +10,7 @@ import NanoID
 
 extension Key {
 
-    static func generate() -> Self {
+    public static func generate() -> Self {
         .init(NanoID().rawValue)
     }
 }
