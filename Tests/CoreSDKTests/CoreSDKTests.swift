@@ -7,13 +7,9 @@
 
 import XCTest
 
-@testable import CoreInterfaceKit
+@testable import CoreSDK
 
-final class CoreInterfaceKitTests: XCTestCase {
-
-    func testExample() async throws {
-        XCTAssertTrue(true)
-    }
+final class CoreSDKTests: XCTestCase {
 
     func testConvertable1() async throws {
         struct Foo: Codable {
