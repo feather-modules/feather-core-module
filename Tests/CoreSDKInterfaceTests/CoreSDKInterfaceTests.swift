@@ -15,13 +15,33 @@ final class CoreSDKInterfaceTests: XCTestCase {
 
         let rawId = "foo-id"
 
-        struct Foo: Identifiable {
+        struct Foo: Identifiable, Identified {
             var id: ID<Self>
         }
 
         let foo = Foo(id: .init(rawValue: rawId))
 
         XCTAssertEqual(foo.id, ID<Foo>(rawValue: rawId))
+        XCTAssertEqual(foo.id.rawValue, rawId)
+    }
+
+    func testID2() async throws {
+
+        let rawId = "foo-id"
+
+        enum Feather {
+            enum Core: Identifiable {
+
+            }
+        }
+
+        struct Foo: Identified {
+            var id: ID<Feather.Core>
+        }
+
+        let foo = Foo(id: .init(rawValue: rawId))
+
+        XCTAssertEqual(foo.id, ID<Feather.Core>(rawValue: rawId))
         XCTAssertEqual(foo.id.rawValue, rawId)
     }
 
