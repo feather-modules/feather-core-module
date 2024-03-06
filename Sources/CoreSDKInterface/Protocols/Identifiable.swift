@@ -5,12 +5,8 @@
 //  Created by Tibor Bodecs on 06/03/2024.
 //
 
-public protocol Identifiable:
-    Sendable,
-    Codable,
-    Equatable,
-    Hashable
-{
+public protocol Identifiable {
+
     associatedtype
         RawIdentifier:
             Sendable,
@@ -19,6 +15,4 @@ public protocol Identifiable:
             Hashable
         =
         String
-
-    var id: ID<Self> { get }
 }
