@@ -18,7 +18,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/binarybirds/swift-nanoid", from: "1.0.0"),
         .package(url: "https://github.com/feather-framework/feather-relational-database", .upToNextMinor(from: "0.2.0")),
-        .package(url: "https://github.com/feather-framework/feather-database-kit", .upToNextMinor(from: "0.2.0")),
+        .package(url: "https://github.com/feather-framework/feather-database-kit", .upToNextMinor(from: "0.3.0")),
         .package(url: "https://github.com/feather-framework/feather-openapi-kit", .upToNextMinor(from: "0.8.0")),
     ],
     targets: [
