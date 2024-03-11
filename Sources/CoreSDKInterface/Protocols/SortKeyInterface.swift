@@ -7,12 +7,6 @@
 
 import Foundation
 
-public protocol SortKeyInterface:
-    Sendable,
-    Codable,
-    Equatable,
-    Hashable,
-    CaseIterable
-{
+public protocol SortKeyInterface: Object, CaseIterable {
 
 }

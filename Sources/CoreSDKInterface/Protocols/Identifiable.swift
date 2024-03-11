@@ -7,12 +7,5 @@
 
 public protocol Identifiable {
 
-    associatedtype
-        RawIdentifier:
-            Sendable,
-            Codable,
-            Equatable,
-            Hashable
-        =
-        String
+    associatedtype RawIdentifier: Object = String
 }

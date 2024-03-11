@@ -5,12 +5,7 @@
 //  Created by Tibor Bodecs on 06/03/2024.
 //
 
-public protocol SimpleQueryInterface:
-    Sendable,
-    Codable,
-    Equatable,
-    Hashable
-{
+public protocol SimpleQueryInterface: Object {
     associatedtype Sort: Sortable
     associatedtype Page: PageInterface
 
