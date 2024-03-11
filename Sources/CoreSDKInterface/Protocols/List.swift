@@ -5,13 +5,8 @@
 //  Created by Tibor Bodecs on 06/03/2024.
 //
 
-public protocol List:
-    Sendable,
-    Codable,
-    Equatable,
-    Hashable
-{
-    associatedtype Item
+public protocol List: Object {
+    associatedtype ItemType
 
-    var items: [Item] { get }
+    var items: [ItemType] { get }
 }

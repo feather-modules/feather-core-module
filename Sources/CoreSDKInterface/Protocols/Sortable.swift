@@ -5,12 +5,7 @@
 //  Created by Tibor Bodecs on 06/03/2024.
 //
 
-public protocol Sortable:
-    Sendable,
-    Codable,
-    Equatable,
-    Hashable
-{
+public protocol Sortable: Object {
     associatedtype Key: SortKeyInterface
 
     var by: Key { get }
