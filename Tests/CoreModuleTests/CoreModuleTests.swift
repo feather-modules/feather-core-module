@@ -7,9 +7,9 @@
 
 import XCTest
 
-@testable import CoreSDK
+@testable import CoreModule
 
-final class CoreSDKTests: XCTestCase {
+final class CoreModuleTests: XCTestCase {
 
     func testConvertable1() async throws {
         struct Foo: Codable {

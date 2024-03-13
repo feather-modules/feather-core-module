@@ -5,7 +5,7 @@
 //  Created by Tibor Bodecs on 11/03/2024.
 //
 
-import CoreSDKInterface
+import CoreModuleInterface
 import DatabaseQueryKit
 
 extension Order {

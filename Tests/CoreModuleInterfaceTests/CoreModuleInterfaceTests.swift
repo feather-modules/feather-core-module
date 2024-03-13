@@ -7,9 +7,9 @@
 
 import XCTest
 
-@testable import CoreSDKInterface
+@testable import CoreModuleInterface
 
-final class CoreSDKInterfaceTests: XCTestCase {
+final class CoreModuleInterfaceTests: XCTestCase {
 
     func testID() async throws {
 
