@@ -11,8 +11,8 @@ let package = Package(
         .visionOS(.v1),
     ],
     products: [
-        .library(name: "CoreSDKInterface", targets: ["CoreSDKInterface"]),
-        .library(name: "CoreSDK", targets: ["CoreSDK"]),
+        .library(name: "CoreModuleInterface", targets: ["CoreModuleInterface"]),
+        .library(name: "CoreModule", targets: ["CoreModule"]),
         .library(name: "CoreOpenAPIGeneratorKit", targets: ["CoreOpenAPIGeneratorKit"]),
     ],
     dependencies: [
@@ -22,14 +22,14 @@ let package = Package(
         .package(url: "https://github.com/feather-framework/feather-openapi-kit", .upToNextMinor(from: "0.8.0")),
     ],
     targets: [
-        .target(name: "CoreSDKInterface"),
+        .target(name: "CoreModuleInterface"),
         .target(
-            name: "CoreSDK",
+            name: "CoreModule",
             dependencies: [
                 .product(name: "NanoID", package: "swift-nanoid"),
                 .product(name: "FeatherRelationalDatabase", package: "feather-relational-database"),
                 .product(name: "DatabaseQueryKit", package: "feather-database-kit"),
-                .target(name: "CoreSDKInterface"),
+                .target(name: "CoreModuleInterface"),
             ]
         ),
         .target(
@@ -43,15 +43,15 @@ let package = Package(
             ]
         ),
         .testTarget(
-            name: "CoreSDKInterfaceTests",
+            name: "CoreModuleInterfaceTests",
             dependencies: [
-                .target(name: "CoreSDKInterface")
+                .target(name: "CoreModuleInterface")
             ]
         ),
         .testTarget(
-            name: "CoreSDKTests",
+            name: "CoreModuleTests",
             dependencies: [
-                .target(name: "CoreSDK")
+                .target(name: "CoreModule")
             ]
         ),
     ]
