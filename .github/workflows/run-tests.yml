@@ -15,13 +15,13 @@ jobs:
   tests:
     runs-on: self-hosted
     # runs-on: ubuntu-latest
-    # strategy:
-    #   matrix:
-    #     image:
-    #       - 'swift:5.9'
-    #       #- 'swiftlang/swift:nightly-5.10-jammy'
-    # container:
-    #   image: ${{ matrix.image }}
+    strategy:
+      matrix:
+        image:
+          - 'swift:5.9'
+          - 'swift:5.10'
+    container:
+      image: ${{ matrix.image }}
     steps:
     
     - name: Checkout
