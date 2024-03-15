@@ -15,7 +15,7 @@ extension Rule where T: Equatable & Encodable {
         queryBuilder: QB,
         fieldKey: QB.Row.FieldKeys,
         message: String? = nil,
-        originalEmail: T? = nil
+        originalValue: T? = nil
     ) -> Self {
         .init(
             message: message ?? "The value should be unique."
@@ -27,8 +27,8 @@ extension Rule where T: Equatable & Encodable {
                     value: value
                 )
             )
-            if let originalEmail {
-                if originalEmail == value {
+            if let originalValue {
+                if originalValue == value {
                     guard count == 1 else {
                         throw RuleError.invalid
                     }
@@ -54,7 +54,7 @@ extension Rule where T: RawRepresentable & Object {
         queryBuilder: QB,
         fieldKey: QB.Row.FieldKeys,
         message: String? = nil,
-        originalKey: T? = nil
+        originalValue: T? = nil
     ) -> Self {
         .init(
             message: message ?? "The value should be unique."
@@ -66,8 +66,8 @@ extension Rule where T: RawRepresentable & Object {
                     value: value
                 )
             )
-            if let originalKey {
-                if originalKey == value {
+            if let originalValue {
+                if originalValue == value {
                     guard count == 1 else {
                         throw RuleError.invalid
                     }
