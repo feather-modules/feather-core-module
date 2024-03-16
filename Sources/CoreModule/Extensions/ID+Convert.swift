@@ -5,7 +5,7 @@
 //  Created by Tibor Bodecs on 02/03/2024.
 //
 
-import CoreModuleInterface
+import CoreModuleKit
 import DatabaseQueryKit
 
 extension ID where Value.RawIdentifier == String {
