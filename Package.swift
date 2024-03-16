@@ -24,7 +24,12 @@ let package = Package(
         .package(url: "https://github.com/feather-framework/feather-validation", .upToNextMinor(from: "0.1.0")),
     ],
     targets: [
-        .target(name: "CoreModuleKit"),
+        .target(
+            name: "CoreModuleKit",
+            dependencies: [
+                .product(name: "FeatherACL", package: "feather-access-control"),
+            ]
+        ),
         .target(
             name: "CoreModule",
             dependencies: [
