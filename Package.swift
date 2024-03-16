@@ -11,7 +11,7 @@ let package = Package(
         .visionOS(.v1),
     ],
     products: [
-        .library(name: "CoreModuleInterface", targets: ["CoreModuleInterface"]),
+        .library(name: "CoreModuleKit", targets: ["CoreModuleKit"]),
         .library(name: "CoreModule", targets: ["CoreModule"]),
         .library(name: "CoreOpenAPIGeneratorKit", targets: ["CoreOpenAPIGeneratorKit"]),
     ],
@@ -24,7 +24,7 @@ let package = Package(
         .package(url: "https://github.com/feather-framework/feather-validation", .upToNextMinor(from: "0.1.0")),
     ],
     targets: [
-        .target(name: "CoreModuleInterface"),
+        .target(name: "CoreModuleKit"),
         .target(
             name: "CoreModule",
             dependencies: [
@@ -33,7 +33,7 @@ let package = Package(
                 .product(name: "FeatherACL", package: "feather-access-control"),
                 .product(name: "FeatherValidation", package: "feather-validation"),
                 .product(name: "DatabaseQueryKit", package: "feather-database-kit"),
-                .target(name: "CoreModuleInterface"),
+                .target(name: "CoreModuleKit"),
             ]
         ),
         .target(
@@ -47,9 +47,9 @@ let package = Package(
             ]
         ),
         .testTarget(
-            name: "CoreModuleInterfaceTests",
+            name: "CoreModuleKitTests",
             dependencies: [
-                .target(name: "CoreModuleInterface")
+                .target(name: "CoreModuleKit")
             ]
         ),
         .testTarget(
