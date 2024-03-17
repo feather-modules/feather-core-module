@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/feather-framework/feather-database-kit",
       "state" : {
-        "revision" : "0c8ab9fbeef4758daf4f8e3e5bda6b29ac2b7bdc",
-        "version" : "0.4.0"
+        "revision" : "03acb89f2f6e81f30a6b76570b1b9a47ecb7741d",
+        "version" : "0.5.0"
       }
     },
     {
