@@ -6,6 +6,7 @@
 //
 
 import CoreModuleKit
+import CoreModule
 import XCTest
 
 final class CoreModuleTests: XCTestCase {
