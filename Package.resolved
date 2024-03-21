@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/feather-framework/feather-access-control",
       "state" : {
-        "revision" : "e9d6dc80a29381bf6fec1cbef16485bcbd657fc7",
-        "version" : "0.1.0"
+        "revision" : "4bc81ea602cc3a0bb0d151f3b9d9df369f173232",
+        "version" : "0.2.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/feather-framework/feather-database-kit",
       "state" : {
-        "revision" : "03acb89f2f6e81f30a6b76570b1b9a47ecb7741d",
-        "version" : "0.5.0"
+        "revision" : "8fa049d4c485a2bd38ca6f2e5f93c46b4a9c7cc1",
+        "version" : "0.6.0"
       }
     },
     {
