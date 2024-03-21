@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "feather-access-control",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/feather-framework/feather-access-control",
-      "state" : {
-        "revision" : "4bc81ea602cc3a0bb0d151f3b9d9df369f173232",
-        "version" : "0.2.0"
-      }
-    },
-    {
       "identity" : "feather-component",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/feather-framework/feather-component",
@@ -23,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/feather-framework/feather-database-kit",
       "state" : {
-        "revision" : "8fa049d4c485a2bd38ca6f2e5f93c46b4a9c7cc1",
-        "version" : "0.6.0"
+        "revision" : "3aca028d8f85ae0e5feb9d4081e845551618c02a",
+        "version" : "0.7.0"
       }
     },
     {
@@ -32,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/feather-framework/feather-migration-kit",
       "state" : {
-        "revision" : "7425a522cdb62098f5b679ffe48775b5585ba147",
-        "version" : "0.1.0"
+        "revision" : "b782c0bca6e4fe62acc00eae3412d2bf742357b6",
+        "version" : "0.3.0"
       }
     },
     {
