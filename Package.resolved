@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/feather-framework/feather-openapi-kit",
       "state" : {
-        "revision" : "e0bb58c878767a15da91d20bbed17184ab8e0859",
-        "version" : "0.8.2"
+        "revision" : "a746f1d301749dda91eebba01be16edc4a5853eb",
+        "version" : "0.9.0"
       }
     },
     {
